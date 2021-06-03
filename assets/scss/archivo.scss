@@ -1,0 +1,626 @@
+/*VARIABLES*/
+
+/*Variables texto*/
+
+$letra : 'Lato', sans-serif;
+$tamaño-letra-titulos: 35px;
+$tamaño-letra-subtitulos: 30pt;
+$tamaño-letra-parrafos: 20px;
+$color-titulos: #1F376A;
+$tamaño-servicios: 27px;
+$segundo-color: #4DB2A1;
+$grosor-letra: bold;
+
+/*Declaracion de BLOQUES--BEM*/
+
+/*BLOQUE UNO*/
+/*Primera seccion de mi INDEX*/
+
+.sectionPrincipal {
+  background-image: url(../../img/carrusel1-min.jpg);
+  background-size: cover;
+  height: 102vh;
+  margin: 0%; 
+}
+
+.sectionPrincipal__container {
+  max-width: 1140px;
+  margin: 0 auto; 
+}
+
+.sectionPrincipal__segundoTitulo {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-size: $tamaño-letra-titulos;
+  font-family: $letra;
+  text-align: left;
+  font-style: italic;
+  margin-left: 10px;
+  padding: 10px 10px 5px 15px;
+  text-decoration: none;
+  margin-left: -6.5rem;
+  animation-duration: 4s;
+  animation-name: aparecer;
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+ }
+
+/*BLOQUE DOS*/
+/*Seccion dos de mi INDEX: ¿Quienes somos?*/
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.container__nosotros {
+  margin-top: 40px; }
+
+.container__estiloParrafo {
+  color: black;
+  font-weight: normal;
+  font-size: $tamaño-letra-parrafos;
+  font-family: $letra;
+  text-align: center;
+  font-style: normal;
+  padding: 10px;
+  margin: 15px 30px;
+ }
+
+.container__conocenos {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-style: italic;
+  font-size: $tamaño-letra-parrafos;
+  font-family: $letra;
+  text-align: right;
+  text-decoration: none;
+  margin-bottom: 30px;
+  margin-top: 30px; }
+
+
+
+/*BLOQUE TRES*/
+/*Seccion TRES de mi INDEX: Marcas que confian en nosotros*/
+/*Primer grid*/
+
+.marcas {
+  margin: 30px 100px;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: "ypf vitol"
+ "cammesa holcim"; }
+
+.marcas__formatoImagenes {
+  max-width: 30%;
+  height: auto; }
+
+.marcas__ypf {
+  grid-area: ypf;
+  margin-left: 250px; }
+
+.marcas__vitol {
+  grid-area: vitol; }
+
+.marcas__cammesa {
+  grid-area: cammesa;
+  margin-left: 250px; }
+
+.marcas__holcim {
+  grid-area: holcim; }
+
+
+
+/*BLOQUE CUATRO*/
+/*Footer*/
+
+.pieDePagina {
+  color: black;
+  font-size: 15px;
+  font-family: $letra;
+  font-weight: $grosor-letra;
+  font-style: italic;
+  text-align: center;
+  background-color: rgba(228, 228, 228, 0.678);
+ }
+
+.pieDePagina__LogoMolve {
+  width: 190px;
+  display: block;
+ }
+
+.pieDePagina__redes {
+  margin: 0px;
+  padding: 0px; 
+}
+
+
+/*BLOQUE CINCO*/
+/*HTML servicios: Nuestros Servicios*/
+
+.style {
+  margin-top: 20px;
+  padding: $tamaño-letra-parrafos/2;
+}
+
+.style__tituloFlota {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-size: $tamaño-letra-subtitulos;
+  font-family: $letra;
+  text-align: left;
+  padding: 20px;
+  margin: 15px 30px;
+  width: 91%;
+  height: auto; 
+}
+
+.style__fondoLiquidos {
+  margin: 0px;
+  padding: 10px; 
+}
+
+.style__tituloServicios {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-size: 25px;
+  font-family: $letra;
+  text-align: left;
+  margin: 15px 30px;
+  padding: 13px;
+  background-color: $segundo-color; 
+  border-radius: 10px;
+
+}
+
+
+/*BLOQUE SEIS*/
+/*HTML empresa: ¿quienes somos?*/
+
+.quienesSomos {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-size: 30pt;
+  font-family: $letra;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+ }
+
+/*BLOQUE SIETE*/
+/*HTML empresa: Mision, vision y valores*/
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.services__liquidos {
+  display: flex;
+  flex-direction: column; }
+
+.services__cargasPeligrosas {
+  display: flex;
+  flex-direction: column; }
+
+.services__cargasAridas {
+  display: flex;
+  flex-direction: column; }
+
+.mision-vision {
+  color: black;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: $letra;
+  text-align: center;
+  font-style: normal;
+  padding: $tamaño-letra-parrafos/2;
+  margin: 15px 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+
+}
+
+/*BLOQUE OCHO*/
+
+/*HTML Flota*/
+/*GRID*/
+
+.padreFlota {
+  display: grid;
+  grid-template-areas: "imgUno imgDos"
+ "volvo mercedes"
+ "imgTres imgCuatro"
+ "vw ford"; 
+}
+
+.padreFlota__imagenUno {
+  grid-area: imgUno; 
+}
+
+.padreFlota__camionVolvo {
+  grid-area: volvo;
+  padding: 10px;
+  margin: 30px; 
+}
+
+.padreFlota__imagenDos {
+  grid-area: imgDos; 
+}
+
+.padreFlota__camionMercedes {
+  grid-area: mercedes;
+  padding: 10px;
+  margin: 30px; 
+}
+
+.padreFlota__imagenTres {
+  grid-area: imgTres; 
+}
+
+.padreFlota__camionVw {
+  grid-area: vw;
+  padding: 10px;
+  margin: 30px;
+ }
+
+.padreFlota__imagenCuatro {
+  grid-area: imgCuatro; 
+}
+
+.padreFlota__camionFord {
+  grid-area: ford;
+  padding: 10px;
+  margin: 30px; 
+}
+
+.padreFlota__fotitos {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 30px; 
+}
+
+.padreFlota__descripcionCamiones {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-size: $tamaño-letra-parrafos;
+  text-align: center;
+  font-style: normal;
+  margin-top: 30px;
+ }
+
+/*Estilo del menu de navegacion*/
+
+header {
+  background-color: rgba(228, 228, 228, 0.678);
+  margin-top: 0px; 
+}
+
+nav {
+  color: darkslategray;
+  font-weight: $grosor-letra;
+  font-size: 15px;
+  font-family: $letra;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+ }
+
+body {
+  background-color: white; 
+}
+
+/* *Primer flex! */
+/*Esto ya fue reemplazado por bootstrap
+
+.padreFlex {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+}
+
+li {
+    display:inline-flex;
+    margin-left:10px;
+}
+
+*/
+/* Submenu */
+/*Esto ya fue reemplazado por bootstrap
+
+.submenuFlex {
+    display: none;
+    position: absolute;   
+}
+
+ul li:hover ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    left: 0%;
+    margin: 0%;
+    padding: 0%;
+    width: 175px;
+    background: rgb(245, 236, 236);
+}
+
+
+.submenuFlex li {
+    margin: 0;
+    padding: 10px, 7px;
+}
+
+*/
+a {
+  text-decoration: none;
+ }
+
+.logoMolve {
+  margin-left: 0px; 
+}
+
+
+/*TODO ESTO CORRESPONDE A MI INDEX*/
+
+/*Estilo de mi primer titulo*/
+
+h1 {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-size: $tamaño-letra-titulos;
+  font-family: $letra;
+  text-align: left;
+  padding: 250px 10px 5px;
+  margin-left: -6rem;
+ }
+
+/*Comienza la segunda seccion - Descripcion empresa*/
+
+section h2 {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-size: $tamaño-letra-subtitulos;
+  font-family: $letra;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px; 
+}
+
+/* Tercera seccion - Descripcion servicios */
+
+.titulos {
+  margin-top: 60px;
+  margin-bottom: 4rem;
+  animation-duration: 4s;
+  animation-name: aparecer;
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+ }
+
+.tituloLiquidos {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-size: $tamaño-servicios;
+  font-family: $letra;
+  text-align: center;
+ }
+
+.parrafoLiquidos {
+  color: black;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: $letra;
+  text-align: center;
+  font-style: normal;
+  margin-top: 20px;
+ }
+
+
+/*Boton VER MAS */
+
+.boton {
+    padding:1rem 2rem;
+    text-decoration: none;
+    background-color:#4DB2A1;
+    color:$color-titulos;
+    font-weight: $grosor-letra;
+    transition: .3s ease all;
+    border: none;
+    border-radius: 100px;
+    min-width: 180px;
+    height: 50px;
+    
+}
+
+
+.boton:hover {
+  background-color: #3c9c8c;
+  text-decoration: none; }
+
+
+/* Pie de pagina  */
+
+footer {
+  padding: 20px 30px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+
+/*HTML Contacto*/
+/*Estilo Formulario*/
+
+form {
+  color: grey;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: $letra;
+  font-weight: bold;
+  text-align: left;
+  font-style: normal;
+  background-color: white;
+  width: 25%;
+  margin-left: 37%;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid grey;
+  margin-bottom: ($tamaño-letra-parrafos*2)+10;
+ }
+
+legend {
+  color: black;
+  font-size: 20px;
+  font-family: $letra;
+  font-weight: $grosor-letra;
+  margin-bottom: 15px; }
+
+label {
+  display: block;
+  width: 100%; }
+
+.comentarios {
+  margin-top: 15px; }
+
+input, textarea {
+  outline: none;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; }
+
+textarea {
+  resize: both;
+  max-height: 300px;
+  min-height: 100px; }
+
+input:focus, textarea:focus {
+  border: 1px solid lightblue; }
+
+input[type="submit"] {
+  margin-bottom: 0px;
+  background: #2a2af7;
+  color: white;
+  border: none; }
+
+input[type="submit"]:hover {
+  background: #5c5cf7;
+  cursor: pointer; }
+
+/*Estilo botones del formulario*/
+
+.botonesFormulario {
+  color: black;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: $letra;
+  font-weight: bold;
+  text-align: center;
+  font-style: normal; 
+}
+
+
+/*HTML Empresa*/
+
+.mision {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-size: 30px;
+  font-family: $letra;
+  text-align: center;
+  font-style: italic;
+  margin-top: ($tamaño-letra-parrafos*2)+10;
+ }
+
+.iso {
+  margin-top: ($tamaño-letra-parrafos*2)+10;
+ }
+
+.certificaciones {
+  margin: 40px 250px 80px 250px; }
+
+  
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px; }
+  .segundoTitulo {
+    font-size: 18px;
+    margin: 0%;
+    padding: 1.5%; }
+  section h2 {
+    font-size: 18px; }
+  .estiloParrafo {
+    font-size: 13px; }
+  .marcas {
+    display: grid;
+    grid-template-areas: "ypf vitol"
+ "cammesa holcim";
+    grid-template-columns: 50% auto;
+    grid-template-rows: 50% auto; }
+  form {
+    margin: 20%;
+    padding: 15%; }
+  iframe {
+    margin: auto; }
+  .padreFlota {
+    display: grid;
+    grid-template-areas: "imgUno"
+ "volvo"
+ "imgDos"
+ "mercedes"
+ "imgTres"
+ "vw"
+ "imgCuatro"
+ "ford"; }
+  footer {
+    flex-direction: column; }
+  .marcas {
+    display: flex;
+    flex-direction: column; }
+  .services {
+    display: flex;
+    flex-direction: column; }
+  .titulos {
+    font-size: 18px;
+    margin: 15px, 0px; }
+  .tituloLiquidos {
+    font-size: 15px;
+    margin: 15px, 0px; }
+  .tituloCargasAridas {
+    font-size: 15px;
+    margin: 15px, 0px; }
+  .tituloCargasPeligrosas {
+    font-size: 15px;
+    margin: 15px, 0px; }
+  .parrafoLiquidos {
+    font-size: 13px; }
+  .parrafoCargasAridas {
+    font-size: 13px; }
+  .parrafoCargasPeligrosas {
+    font-size: 13px; } }
