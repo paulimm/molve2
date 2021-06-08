@@ -322,52 +322,6 @@ body {
   background-color: white; 
 }
 
-/* *Primer flex! */
-/*Esto ya fue reemplazado por bootstrap
-
-.padreFlex {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-}
-
-.dropdown {
-    position: relative;
-}
-
-li {
-    display:inline-flex;
-    margin-left:10px;
-}
-
-*/
-/* Submenu */
-/*Esto ya fue reemplazado por bootstrap
-
-.submenuFlex {
-    display: none;
-    position: absolute;   
-}
-
-ul li:hover ul {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    top: 100%;
-    left: 0%;
-    margin: 0%;
-    padding: 0%;
-    width: 175px;
-    background: rgb(245, 236, 236);
-}
-
-
-.submenuFlex li {
-    margin: 0;
-    padding: 10px, 7px;
-}
-
-*/
 a {
   text-decoration: none;
  }
@@ -476,36 +430,34 @@ footer {
 /*HTML Contacto*/
 /*Estilo Formulario*/
 
-form {
-  color: grey;
-  font-weight: normal;
-  font-size: 16px;
-  font-family: $letra;
-  font-weight: bold;
-  text-align: left;
-  font-style: normal;
-  background-color: white;
-  width: 25%;
-  margin-left: 37%;
-  padding: 20px;
-  border-radius: 3px;
-  border: 1px solid grey;
-  margin-bottom: ($tamaño-letra-parrafos*2)+10;
- }
+ .contacto {
+  background-image: url(../../img/paisaje.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+}
 
-legend {
-  color: black;
-  font-size: 20px;
+.formularioDos {
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top:20px;
+  border-radius: 7px;
+  font-family: $letra;
+  background: rgba(0,0,0,0.4);
+  color:black;
+  font-size:16px;
+  
+}
+
+h3 {
   font-family: $letra;
   font-weight: $grosor-letra;
-  margin-bottom: 15px; }
-
-label {
-  display: block;
-  width: 100%; }
-
-.comentarios {
-  margin-top: 15px; }
+  color: rgb(252, 249, 249);
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 input, textarea {
   outline: none;
@@ -517,33 +469,24 @@ input, textarea {
 textarea {
   resize: both;
   max-height: 300px;
-  min-height: 100px; }
-
-input:focus, textarea:focus {
-  border: 1px solid lightblue; }
-
-input[type="submit"] {
-  margin-bottom: 0px;
-  background: #2a2af7;
-  color: white;
-  border: none; }
-
-input[type="submit"]:hover {
-  background: #5c5cf7;
-  cursor: pointer; }
-
-/*Estilo botones del formulario*/
-
-.botonesFormulario {
-  color: black;
-  font-weight: normal;
-  font-size: 15px;
-  font-family: $letra;
-  font-weight: bold;
-  text-align: center;
-  font-style: normal; 
+  min-height: 100px; 
+  max-width: 100%;
 }
 
+.botonForm {
+  background: #454e66;
+  color: #fff;
+  padding: 20px;
+  font-size: 15px;
+  font-family: $letra;
+
+}
+
+.boton:hover {
+  cursor:pointer;
+  background: #7785ad;
+
+}
 
 /*HTML Empresa*/
 
@@ -586,8 +529,6 @@ input[type="submit"]:hover {
   form {
     margin: 20%;
     padding: 15%; }
-  iframe {
-    margin: auto; }
   .padreFlota {
     display: grid;
     grid-template-areas: "imgUno"
@@ -624,3 +565,9 @@ input[type="submit"]:hover {
     font-size: 13px; }
   .parrafoCargasPeligrosas {
     font-size: 13px; } }
+
+    @media (max-width:480px) {
+      form { 
+        width: 100%;
+      }
+    }
