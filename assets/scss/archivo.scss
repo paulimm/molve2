@@ -179,7 +179,6 @@ $grosor-letra: bold;
 
 }
 
-
 /*BLOQUE SEIS*/
 /*HTML empresa: ¿quienes somos?*/
 
@@ -410,7 +409,6 @@ section h2 {
     
 }
 
-
 .boton:hover {
   background-color: #3c9c8c;
   text-decoration: none; }
@@ -427,15 +425,18 @@ footer {
  }
 
 
+
 /*HTML Contacto*/
 /*Estilo Formulario*/
 
  .contacto {
   background-image: url(../../img/paisaje.jpg);
-  background-size: 100vw 100vh;
   background-attachment: fixed;
   margin: 0;
+  background-size: cover;    
+  padding: 2rem 0;
 }
+
 
 .formularioDos {
   width: 450px;
@@ -508,6 +509,7 @@ textarea {
   margin: 40px 250px 80px 250px; }
 
   
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   h1 {

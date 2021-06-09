@@ -343,9 +343,10 @@ footer {
 /*Estilo Formulario*/
 .contacto {
   background-image: url(../../img/paisaje.jpg);
-  background-size: 100vw 100vh;
   background-attachment: fixed;
-  margin: 0; }
+  margin: 0;
+  background-size: cover;
+  padding: 2rem 0; }
 
 .formularioDos {
   width: 450px;
