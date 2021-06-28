@@ -553,7 +553,7 @@ textarea {
 }
 
 .contact-form form button {
-  background: rgb(71, 145, 241);
+  background: $color-titulos;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
@@ -561,7 +561,7 @@ textarea {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: rgb(71, 145, 241);
+  background: $color-titulos;
   color: #fff;
   transition: background-color 1s ease-out;
   outline: 0;
