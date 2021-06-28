@@ -37,7 +37,7 @@ $grosor-letra: bold;
   margin-left: 10px;
   padding: 10px 10px 5px 15px;
   text-decoration: none;
-  margin-left: -6.5rem;
+  /*margin-left: -6.5rem;*/
   animation-duration: 4s;
   animation-name: aparecer;
 
@@ -225,6 +225,7 @@ a {
   text-decoration: none;
  }
 
+
 /*Estilo de mi primer titulo*/
 h1 {
   color: $color-titulos;
@@ -233,7 +234,7 @@ h1 {
   font-family: $letra;
   text-align: left;
   padding: 250px 10px 5px;
-  margin-left: -6rem;
+  /*margin-left: -6rem;*/
  }
 
 /*Comienza la segunda seccion - Descripcion empresa*/
@@ -264,7 +265,7 @@ section h2 {
   }
  }
 
- /*Cards*/
+ /*Cards - Servicios*/
  .containerCards{
   width: 100%;
   max-width: 1200px;
@@ -327,7 +328,7 @@ font-weight: $grosor-letra;
 color: black;
 }
 
-/* Pie de pagina  */  
+/*Footer*/  
 .container{
 	max-width: 1170px;
 	margin:auto;
@@ -567,22 +568,37 @@ textarea {
       }
     }
 
-    .title{
-      text-align: center;
-      font-size: $tamaño-letra-subtitulos;
-      color: $color-titulos;
-      margin-top: 100px;
-      font-family: $letra;
-      padding: 10px;
-      font-weight: $grosor-letra;
-      margin-bottom: 30px;
+    @media (max-width:574px) {
+      .footer-col{
+        width: 100%;
+      }
+      
+    }
+    
+    @media (max-width:767px) {
+      .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+      }
+      
+    }
+
+  .title{
+    text-align: center;
+    font-size: $tamaño-letra-subtitulos;
+    color: $color-titulos;
+    margin-top: 100px;
+    font-family: $letra;
+    padding: 10px;
+    font-weight: $grosor-letra;
+    margin-bottom: 30px;
   }
   
-/*HTML FLOTA*/
+  /*HTML FLOTA*/
 
-.contenedorFlota {
+  .contenedorFlota {
   margin: 20px;
-}
+  }
 
 .padreFlota__descripcionCamiones {
   color: $color-titulos;
@@ -592,3 +608,30 @@ textarea {
   font-style: normal;
   margin-top: 18px;
  }
+
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+  
+  .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+      padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+      text-align: left;
+  }
+}
+
+@media (min-width: 1325px) {
+  h1{
+     margin-left: -6rem;
+  }
+  .sectionPrincipal__segundoTitulo{
+     margin-left: -6.5rem;
+  }
+  }

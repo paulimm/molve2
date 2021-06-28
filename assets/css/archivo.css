@@ -24,7 +24,7 @@
   margin-left: 10px;
   padding: 10px 10px 5px 15px;
   text-decoration: none;
-  margin-left: -6.5rem;
+  /*margin-left: -6.5rem;*/
   animation-duration: 4s;
   animation-name: aparecer; }
 
@@ -193,7 +193,7 @@ h1 {
   font-family: "Lato", sans-serif;
   text-align: left;
   padding: 250px 10px 5px;
-  margin-left: -6rem; }
+  /*margin-left: -6rem;*/ }
 
 /*Comienza la segunda seccion - Descripcion empresa*/
 section h2 {
@@ -218,7 +218,7 @@ section h2 {
   100% {
     opacity: 1; } }
 
-/*Cards*/
+/*Cards - Servicios*/
 .containerCards {
   width: 100%;
   max-width: 1200px;
@@ -272,7 +272,7 @@ section h2 {
   font-weight: bold;
   color: black; }
 
-/* Pie de pagina  */
+/*Footer*/
 .container {
   max-width: 1170px;
   margin: auto; }
@@ -480,6 +480,15 @@ textarea {
   form {
     width: 100%; } }
 
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%; } }
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px; } }
+
 .title {
   text-align: center;
   font-size: 30pt;
@@ -501,3 +510,21 @@ textarea {
   text-align: center;
   font-style: normal;
   margin-top: 18px; }
+
+/* LARGE SIZE */
+@media (min-width: 700px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr; }
+  .contact-wrapper > * {
+    padding: 2em; }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left; } }
+
+@media (min-width: 1325px) {
+  h1 {
+    margin-left: -6rem; }
+  .sectionPrincipal__segundoTitulo {
+    margin-left: -6.5rem; } }
