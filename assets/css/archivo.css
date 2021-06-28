@@ -347,32 +347,6 @@ ul {
 .parrafoFooter {
   color: #bbbbbb; }
 
-/*HTML Contacto*/
-/*Estilo Formulario
- .contacto {
-  background-image: url(../../img/rutaa.jpg);
-  background-attachment: fixed;
-  margin: 0;
-  background-size: cover;    
-  padding: 2rem 0;
-}
-
-
-
-.formularioDos {
-  width: 450px;
-  margin: auto;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  margin-top:20px;
-  border-radius: 7px;
-  font-family: $letra;
-  background: rgba(0,0,0,0.4);
-  color:black;
-  font-size:16px;
-  
-}
-*/
 h3 {
   font-family: "Lato", sans-serif;
   font-weight: bold;
@@ -380,36 +354,6 @@ h3 {
   text-align: center;
   margin-bottom: 20px; }
 
-/*
-input, textarea {
-  outline: none;
-  margin-bottom: 20px;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box; }
-
-textarea {
-  resize: both;
-  max-height: 300px;
-  min-height: 100px; 
-  max-width: 100%;
-}
-
-.botonForm {
-  background: #454e66;
-  color: #fff;
-  padding: 20px;
-  font-size: 15px;
-  font-family: $letra;
-
-}
-
-.boton:hover {
-  cursor:pointer;
-  background: #7785ad;
-
-}
-*/
 /*Formulario Dos*/
 .presupuesto {
   color: #1F376A;
@@ -498,27 +442,6 @@ textarea {
   text-align: center;
   margin: 0 0 1rem 0; }
 
-/* LARGE SIZE */
-@media (min-width: 700px) {
-  .hablanos {
-    padding: 0 4em; }
-  .contact-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr; }
-  .contact-wrapper > * {
-    padding: 2em; }
-  .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
-    text-align: left; } }
-
-.hablanos__contenedor {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: space-evenly;
-  margin-bottom: 20px; }
-
 /*HTML Empresa*/
 .mision {
   color: #1F376A;
@@ -561,12 +484,6 @@ textarea {
     grid-template-areas: "ypf vitol" "cammesa holcim";
     grid-template-columns: 50% auto;
     grid-template-rows: 50% auto; }
-  form {
-    margin: 20%;
-    padding: 15%; }
-  .padreFlota {
-    display: grid;
-    grid-template-areas: "imgUno" "volvo" "imgDos" "mercedes" "imgTres" "vw" "imgCuatro" "ford"; }
   footer {
     flex-direction: column; }
   .marcas {
@@ -592,11 +509,10 @@ textarea {
   .parrafoCargasAridas {
     font-size: 13px; }
   .parrafoCargasPeligrosas {
-    font-size: 13px; } }
-
-@media (max-width: 480px) {
-  form {
-    width: 100%; } }
+    font-size: 13px; }
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px; } }
 
 @media (max-width: 574px) {
   .footer-col {
@@ -607,7 +523,6 @@ textarea {
     width: 50%;
     margin-bottom: 30px; } }
 
-/* LARGE SIZE */
 @media (min-width: 700px) {
   .contact-wrapper {
     display: grid;
@@ -624,12 +539,3 @@ textarea {
     margin-left: -6rem; }
   .sectionPrincipal__segundoTitulo {
     margin-left: -6.5rem; } }
-
-@media (max-width: 574px) {
-  .footer-col {
-    width: 100%; } }
-
-@media (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px; } }
