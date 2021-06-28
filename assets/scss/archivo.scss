@@ -1,5 +1,4 @@
 /*VARIABLES*/
-
 /*Variables texto*/
 
 $letra : 'Lato', sans-serif;
@@ -85,7 +84,6 @@ $grosor-letra: bold;
   margin-top: 30px; }
 
 
-
 /*BLOQUE TRES*/
 /*Seccion TRES de mi INDEX: Marcas que confian en nosotros*/
 /*Primer grid*/
@@ -116,32 +114,7 @@ $grosor-letra: bold;
   grid-area: holcim; }
 
 
-
 /*BLOQUE CUATRO*/
-/*Footer*/
-
-.pieDePagina {
-  color: black;
-  font-size: 17px;
-  font-family: $letra;
-  font-weight: $grosor-letra;
-  font-style: italic;
-  text-align: center;
-  background-color: rgba(228, 228, 228, 0.678);
- }
-
-.pieDePagina__LogoMolve {
-  width: 190px;
-  display: block;
- }
-
-.pieDePagina__redes {
-  margin: 0px;
-  padding: 0px; 
-}
-
-
-/*BLOQUE CINCO*/
 /*HTML servicios: Nuestros Servicios*/
 
 .style {
@@ -154,12 +127,24 @@ $grosor-letra: bold;
   font-weight: $grosor-letra;
   font-size: $tamaño-letra-subtitulos;
   font-family: $letra;
-  text-align: left;
+  text-align: center;
   padding: 20px;
   margin: 15px 30px;
   width: 91%;
   height: auto; 
-}
+  animation-duration: 4s;
+  animation-name: aparecer;
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+ }
+
 
 .style__fondoLiquidos {
   margin: 0px;
@@ -167,20 +152,17 @@ $grosor-letra: bold;
 }
 
 .style__tituloServicios {
-  color: $color-titulos;
+  color: white;
   font-weight: $grosor-letra;
   font-size: 25px;
   font-family: $letra;
-  text-align: left;
+  text-align: center;
   margin: 15px 30px;
   padding: 13px;
-  background-color: $segundo-color; 
   border-radius: 10px;
+  background-color: $color-titulos;
 
 }
-
-/*BLOQUE SEIS*/
-/*HTML empresa: ¿quienes somos?*/
 
 .quienesSomos {
   color: $color-titulos;
@@ -192,14 +174,16 @@ $grosor-letra: bold;
   margin-bottom: 40px;
  }
 
-/*BLOQUE SIETE*/
+/*BLOQUE CINCO*/
 /*HTML empresa: Mision, vision y valores*/
 
 .services {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  height: auto;
+  width: 100%; }
 
 .services__liquidos {
   display: flex;
@@ -224,94 +208,10 @@ $grosor-letra: bold;
   margin: 15px 30px;
   border: 2px solid black;
   border-radius: 10px;
-
 }
 
-/*BLOQUE OCHO*/
 
-/*HTML Flota*/
-/*GRID*/
-
-.padreFlota {
-  display: grid;
-  grid-template-areas: "imgUno imgDos"
- "volvo mercedes"
- "imgTres imgCuatro"
- "vw ford"; 
-}
-
-.padreFlota__imagenUno {
-  grid-area: imgUno; 
-}
-
-.padreFlota__camionVolvo {
-  grid-area: volvo;
-  padding: 10px;
-  margin: 30px; 
-}
-
-.padreFlota__imagenDos {
-  grid-area: imgDos; 
-}
-
-.padreFlota__camionMercedes {
-  grid-area: mercedes;
-  padding: 10px;
-  margin: 30px; 
-}
-
-.padreFlota__imagenTres {
-  grid-area: imgTres; 
-}
-
-.padreFlota__camionVw {
-  grid-area: vw;
-  padding: 10px;
-  margin: 30px;
- }
-
-.padreFlota__imagenCuatro {
-  grid-area: imgCuatro; 
-}
-
-.padreFlota__camionFord {
-  grid-area: ford;
-  padding: 10px;
-  margin: 30px; 
-}
-
-.padreFlota__fotitos {
-  border-radius: 20px;
-  padding: 10px;
-  margin: 30px; 
-}
-
-.padreFlota__descripcionCamiones {
-  color: $color-titulos;
-  font-weight: $grosor-letra;
-  font-size: $tamaño-letra-parrafos;
-  text-align: center;
-  font-style: normal;
-  margin-top: 30px;
- }
-
-/*Estilo del menu de navegacion*/
-
-header {
-  background-color: rgba(228, 228, 228, 0.678);
-  margin-top: 0px; 
-}
-
-nav {
-  color: darkslategray;
-  font-weight: $grosor-letra;
-  font-size: 15px;
-  font-family: $letra;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-}
-
+/*INDEX*/
 img {
   max-width: 100%;
   height: auto;
@@ -325,15 +225,7 @@ a {
   text-decoration: none;
  }
 
-.logoMolve {
-  margin-left: 0px; 
-}
-
-
-/*TODO ESTO CORRESPONDE A MI INDEX*/
-
 /*Estilo de mi primer titulo*/
-
 h1 {
   color: $color-titulos;
   font-weight: $grosor-letra;
@@ -345,7 +237,6 @@ h1 {
  }
 
 /*Comienza la segunda seccion - Descripcion empresa*/
-
 section h2 {
   color: $color-titulos;
   font-weight: $grosor-letra;
@@ -357,7 +248,6 @@ section h2 {
 }
 
 /* Tercera seccion - Descripcion servicios */
-
 .titulos {
   margin-top: 60px;
   margin-bottom: 4rem;
@@ -374,63 +264,164 @@ section h2 {
   }
  }
 
-.tituloLiquidos {
-  color: $color-titulos;
-  font-weight: $grosor-letra;
-  font-size: $tamaño-servicios;
-  font-family: $letra;
-  text-align: center;
- }
-
-.parrafoLiquidos {
-  color: black;
-  font-weight: normal;
-  font-size: 20px;
-  font-family: $letra;
-  text-align: center;
-  font-style: normal;
-  margin-top: 20px;
- }
-
-
-/*Boton VER MAS */
-
-.boton {
-    padding:1rem 2rem;
-    text-decoration: none;
-    background-color:#4DB2A1;
-    color:$color-titulos;
-    font-weight: $grosor-letra;
-    transition: .3s ease all;
-    border: none;
-    border-radius: 100px;
-    min-width: 180px;
-    height: 50px;
-    
+ /*Cards*/
+ .containerCards{
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
 }
 
-.boton:hover {
-  background-color: #3c9c8c;
-  text-decoration: none; }
+.containerCards .card{
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
 
+.containerCards .card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
 
-/* Pie de pagina  */
+.containerCards .card img{
+  width: 330px;
+  height: 220px;
+}
 
-footer {
-  padding: 20px 30px;
-  background: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- }
+.containerCards .card h4{
+  font-weight: 600;
+}
 
+.containerCards .card p{
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
 
+.containerCards .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.tituloCards {
+font-family: $letra;
+font-size: 27px;
+font-weight: $grosor-letra;
+color: $color-titulos;
+margin-top: 5%;
+}
+
+.parrafoCards {
+font-family: $letra;
+font-size: 20px;
+font-weight: $grosor-letra;
+color: black;
+}
+
+/* Pie de pagina  */  
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row-c{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+  font-family: $letra;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.parrafoFooter {
+  color: #bbbbbb;
+}
+@media (max-width:574px) {
+  .footer-col{
+    width: 100%;
+  }
+  
+}
+
+@media (max-width:767px) {
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  
+}
 
 /*HTML Contacto*/
 /*Estilo Formulario*/
-
  .contacto {
-  background-image: url(../../img/paisaje.jpg);
+  background-image: url(../../img/rutaa.jpg);
   background-attachment: fixed;
   margin: 0;
   background-size: cover;    
@@ -438,7 +429,7 @@ footer {
 }
 
 .presupuesto {
-  color: rgb(54, 54, 54);
+  color: rgb(0, 0, 0);
   font-weight: $grosor-letra;
   font-size: $tamaño-letra-subtitulos;
   font-family: $letra;
@@ -519,19 +510,11 @@ textarea {
   margin: 40px 250px 80px 250px; }
 
   
-
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 20px; }
   .segundoTitulo {
-    font-size: 18px;
     margin: 0%;
     padding: 1.5%; }
-  section h2 {
-    font-size: 18px; }
-  .estiloParrafo {
-    font-size: 13px; }
   .marcas {
     display: grid;
     grid-template-areas: "ypf vitol"
@@ -583,3 +566,29 @@ textarea {
         width: 100%;
       }
     }
+
+    .title{
+      text-align: center;
+      font-size: $tamaño-letra-subtitulos;
+      color: $color-titulos;
+      margin-top: 100px;
+      font-family: $letra;
+      padding: 10px;
+      font-weight: $grosor-letra;
+      margin-bottom: 30px;
+  }
+  
+/*HTML FLOTA*/
+
+.contenedorFlota {
+  margin: 20px;
+}
+
+.padreFlota__descripcionCamiones {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-size: $tamaño-letra-parrafos;
+  text-align: center;
+  font-style: normal;
+  margin-top: 18px;
+ }

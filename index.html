@@ -3,7 +3,6 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,27 +13,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-
     <link rel="stylesheet" href="./assets/css/archivo.css">
-
-
-
 </head>
 
 <body>
-
     <!--Aca comienza el contenido de mi sitio-->
-
     <header>
-
         <!--Encabezado de la pagina-->
         <!-- Menu de navegacion-bootstrap -->
-      
-        <nav class="navbar navbar-expand-lg navbar-light colorNav">
+        <nav class="navbar navbar-expand-lg fs-5 navbar-light colorNav">
             <div class="container-fluid">
-
                 <!-- Logo -->
-
                 <a href="index.html"><img src="./img/logo.jpeg" alt="logo" class="logoMolve"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,177 +48,124 @@
                 </ul>
               </div>
             </div>
-        
           </nav>
 
     </header>
 
-
         <!--Bloque contenedor -->
 
-    <section class="sectionPrincipal">
-
+    <section class="sectionPrincipal img-fluid">
         <!--Comienzo de la primera seccion-->
         <!-- Primer elemento del bloque -->
 
         <div class="sectionPrincipal__container">
-
             <h1>Distribución y Logística</h1>
-
             <h2 class="sectionPrincipal__segundoTitulo"><a href=".//views/Contacto.html">Solicitá tu presupuesto</h2></a>
 
             <!-- Segundo elemento del bloque -->
-
         </div>
-
-        <!-- Aca ira un carrusel de imagenes de fondo -->
-
         <!--Fin de la primera seccion-->
-
     </section>
 
-
     <section>
-
         <!--Comienzo de la segunda seccion-->
         <!-- Bloque contenedor -->
-
         <div class="container">
-
           <!-- Primer elemento del bloque -->
-
             <h2 class="container__nosotros">¿Quienes Somos?</h2>
-
             <!-- Segundo elemento del bloque -->
-
-             <p class="container__estiloParrafo">La empresa Molve Transporte Internacional S.R.L., fue fundada en Córdoba, Argentina, el mes de Junio de 2006, con el objeto de abastecer la demanda del servicio de transporte de líquidos dentro del territorio argentino como del territorio internacional. A partir de su fundación, la empresa se ha desempeñado con eficacia y responsabilidad en el mercado del transporte de líquidos, abasteciendo el ámbito de combustibles líquidos, aceites, glicerina, alcohol y similares. En la actualidad hemos adicionado el servicio de transporte de cargas generales tales como áridos y materiales de construcción.-
-            
+             <p class="container__estiloParrafo">Fundada en Córdoba, Argentina, en el año 2006, Molve Transporte Internacional nació con el objetivo de abastecer la demanda del servicio de transporte de líquidos tanto del territorio argentino como del internacional. A partir de su fundación, la empresa se ha desempeñado con eficacia y responsabilidad en el mercado, transportando líquidos, aceites, glicerina, alcohol y similares. En la actualidad hemos adicionado el servicio de transporte de cargas generales tales como áridos y materiales de construcción.-
              </p>
-
              <!-- Tercer elemento del bloque  -->
-
             <div class="container__conocenos"><a href="./views/Empresa.html" class="boton">Conocenos</a></div>
 
             <!-- Breve descripcion de la empresa, con un boton que permite redireccionar a la pagina empresa -->
 
             <img src="img/camionprincial-min.jpg" alt="camion">
-           
-
          <!--Fin de la segunda seccion-->
-
          </div>
         
     </section>
 
-
-    <section>
-
-        <!--Comienzo tercera seccion-->
-        <div class="container">
-
-            <h2 class="titulos">Nuestros Servicios</h2>      
-
-            <div class="services">
-                <div class="services__liquidos">
-                 <h3 class="tituloLiquidos">Transporte de liquidos</h3>
-                <p class="parrafoLiquidos">Muy breve descripcion del servicio</p>
-                    <div class="parrafoLiquidos"><a href="./views/Servicios.html" class="boton">VER MAS</a></div>
-                </div>    
-
-                <div class="services__cargasPeligrosas">   
-                <h3 class="tituloLiquidos">Servicio de Logística</h3>
-                <p class="parrafoLiquidos">Muy breve descripcion del servicio</p>
-                    <div class="parrafoLiquidos"><a href="./views/Servicios.html" class="boton">VER MAS</a></div>
-                </div>
-            
-                <div class="services__cargasAridas">
-                <h3 class="tituloLiquidos">Cargas de Arídos</h3>
-                 <p class="parrafoLiquidos">Muy breve descripcion del servicio</p>
-                    <div class="parrafoLiquidos"><a href="./views/Servicios.html" class="boton">VER MAS</a></div>
-                </div>
-            
-            </div>
-            
-        </div>
-            
-
+    <h2 class="title">Nuestros Servicios</h2>
+      <div class="containerCards">
+          <div class="card">
+              <img src="./img/camion-cards-cinco.jpg">
+              <h3 class="tituloCards">Transporte de Liquidos</h3>
+              <p class="parrafoCards">Servicio de transporte de liquidos tales como combustibles, alcohol, glicerina, entre otros.</p>
+              <a href="./Servicios.html">Leer más</a>
+          </div>
+          <div class="card">
+              <img src="./img/camion-cards-cuatro.jpg">
+              <h3 class="tituloCards">Servicio de Logistica</h3>
+              <p class="parrafoCards"p>El cumplimiento es nuestro mayor logro, hacemos un seguimiento especial para que la mercadería transportada llegue en tiempo y forma.</p>
+              <a href="./Servicios.html">Leer más</a>
+          </div>
+          <div class="card">
+              <img src="./img/camion-cards-tres.jpg">
+              <h3 class="tituloCards">Carga de Aridos</h3>
+              <p class="parrafoCards">Poseemos las herramientas necesarias para transportar cargas tipo áridas, ya sea arena, piedras, grava, gravilla, etc. </p>
+              <a href="./Servicios.html">Leer más</a>
+          </div>
+      </div>
+  
         <!--Fin de la tercera seccion-->
-
-    </section>
-
     <br>
     <br>
-
+      
     <section>
-
         <!--Comienzo de la cuarta seccion-->
-
-
         <h2 class="titulos">Empresas que confían en nosotros</h2>
         <br>
-        
                 <div class="marcas">
-                
                     <img src="img/logoypf.png" alt="logoypf"class="marcas__formatoImagenes marcas__ypf">
-                
                     <img src="img/logovitol.jpg" alt="logovitol" class="marcas__formatoImagenes marcas__vitol">
-                
-                
                     <img src="img/logocammesa.png" alt="logocammesa" class="marcas__formatoImagenes marcas__cammesa"> 
-   
                     <img src="img/logoholcim.png" alt="logoholcim" class="marcas__formatoImagenes marcas__holcim">
-            
                </div>
-    
-
         <!--Fin de la cuarta seccion-->
-        
     </section>
-
     <br>
     <br>
 
-    <section>   
-
+    <section>
 
     <!-- Bloque contenedor -->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row-c">
+          <div class="footer-col">
+            <h4>Sitio</h4>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./views/Empresa.html">Empresa</a></li>
+              <li><a href="./views/Servicios.html">Servicios</a></li>
+              <li><a href="./views/Flota.html">Flota</a></li>
+              <li><a href="./views/Contacto.html">Contacto</a></li>
+            </ul>
+          </div>
 
-    <footer class="pieDePagina">
-
-        <!--Pie de pagina-->
-        <!-- Primer elemento del bloque -->
-
-        <div class="pieDePagina__logoMolve">
-
-            <img src="img/logo.jpeg" alt="logo">
-
+          <div class="footer-col">
+            <h4>Redes</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com"><img src="./img/logotipo-circular-de-facebook.png" alt="logofacebook" width="30px" height="30px"></a>
+              <a href="https://www.linkedin.com"><img src="./img/linkedin.png" alt="logofacebook" width="30px" height="30px"></a>
+              <a href="https://www.whatsapp.com"><img src="./img/whatsapp (1).png" alt="logofacebook" width="30px" height="30px"></a>
+          </div>
         </div>
 
-        <div>
-            <p>Duarte Quiros 835 3 "A"</p>
-            <p>Córdoba Capital</p>
-
-        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+            <p class="parrafoFooter">Duarte Quiros 834 3 "A" - Córdoba Capital</p>
+            <p class="parrafoFooter">+549-3513254604</p>
+            <p class="parrafoFooter">contacto@molve.com.ar</p>
           
-
-        <div>
-            <p>Telefono: +5193513254604</p>
-            <p>Mail: paula.molina@molve.com.ar</p>
-
+          </ul>
         </div>
 
-        <!-- Segundo elemento del bloque -->
-
-        <div class="pieDePagina__redes">
-
-            <a href="https://www.facebook.com"><img src="img/logotipo-circular-de-facebook.png" alt="logofacebook" width="30px" height="30px"></a>
-            <a href="https://www.linkedin.com"><img src="img/linkedin.png" alt="logolinkedin" width="30px" height="30px"></a>
-            <a href="https://www.whatsapp.com"><img src="img/whatsapp (1).png" alt="logowp" width="30px" height="30px"></a>
-
-        </div>
-        
-    </footer>
-
+      </div>
+  </footer>
 
     <!-- SCRIPT -->
 

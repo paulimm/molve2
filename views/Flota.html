@@ -27,7 +27,7 @@
 
           <!--Encabezado de la pagina-->
           
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg fs-5 navbar-light bg-light">
             <div class="container-fluid">
 
                 <!-- Logo -->
@@ -62,80 +62,83 @@
 
 
     <section>
-
         <!-- Comienzo primera seccion -->
-
         <h1 class="style__tituloFlota">Nuestra Flota</h2>
-
-        <!-- Fin primera seccion -->
-
     </section>
 
-            <!-- Comienzo segunda seccion -->
+        <!-- Comienzo segunda seccion -->
 
-    <section>
-
-        <!-- Bloque contenedor -->
-
-        <div class="padreFlota">
-            
-                    <img src="../img/imagenservicios-min.jpg" alt="camionuno" class="padreFlota__fotitos padreFlota__imagenUno" >
-
-                    <p class="padreFlota__camionVolvo padreFlota__descripcionCamiones">SCANIA MODELO 74HG56</p>
-
-                    <img src="../img/imagenflota-min.jpg" alt="camiondos" class="padreFlota__fotitos padreFlota__imagenDos" >
-
-                    <p class="padreFlota__camionMercedes padreFlota__descripcionCamiones">SCANIA MODELO 789TGH6 </p>
-
-                    <img src="../img/imagenflota3-min.jpg" alt="camiontres" class="padreFlota__fotitos padreFlota__imagenTres">
-
-                    <p class="padreFlota__camionVw padreFlota__descripcionCamiones">VOLVO MODELO GHJ098</p>
-            
-                    <img src="../img/imagenflota1-min.jpg" alt="camioncuatro" class="padreFlota__fotitos padreFlota__imagenCuatro">
-
-                    <p class="padreFlota__camionFord padreFlota__descripcionCamiones">SCANIA MODELO 234FGH6</p>
-
-            
-            <!-- Fin segunda seccion -->
-
+  <div class=contenedorFlota>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="../img/imagenflota1-min.jpg" class="card-img-top" alt="camion-uno">
+          <div class="card-body">
+            <p class="card-title padreFlota__descripcionCamiones">Scania Modelo 74HG56</p>
+          </div>
         </div>
-   
-    </section>
-
-    <footer class="pieDePagina">
-
-        <!--Pie de pagina-->
-        
-        <div class="pieDePagina__logoMolve">
-
-            <img src="../img/logo.jpeg" alt="logo">
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../img/imagenflota3-min.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-title padreFlota__descripcionCamiones">Scania Modelo 234FGH6</p>
+          </div>
         </div>
-
-
-        <div>
-
-            <p>Duarte Quiros 835 3 "A"</p>
-            <p>Córdoba Capital</p>
-
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../img/imagenservicios-min.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-title padreFlota__descripcionCamiones">Volvo Modelo GHJ098</p>
+          </div>
         </div>
-
-        <div>
-
-            <p>Telefono: +5493513254604</p>
-            <p>Mail: paula.molina@molve.com.ar</p>
-
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../img/imagenflota-min.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-title padreFlota__descripcionCamiones">Scania Modelo 789TGH6</p>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="pieDePagina__redes">
 
-           <a href="https://www.facebook.com"><img src="../img/logotipo-circular-de-facebook.png" alt="logofacebook" width="30px" height="30px"></a>
-           <a href="https://www.linkedin.com"><img src="../img/linkedin.png" alt="logolinkedin" width="30px" height="30px"></a>
-           <a href="https://www.whatsapp.com"><img src="../img/whatsapp (1).png" alt="logowp" width="30px" height="30px"></a>
 
+
+
+    <footer class="footer">
+      <div class="container"> 
+        <div class="row-c">
+          <div class="footer-col">
+            <h4>Sitio</h4>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./Empresa.html">Empresa</a></li>
+              <li><a href="./Servicios.html">Servicios</a></li>
+              <li><a href="./Flota.html">Flota</a></li>
+              <li><a href="./Contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Redes</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com"><img src="../img/logotipo-circular-de-facebook.png" alt="logofacebook" width="30px" height="30px"></a>
+              <a href="https://www.linkedin.com"><img src="../img/linkedin.png" alt="logolinkedin" width="30px" height="30px"></a>
+              <a href="https://www.whatsapp.com"><img src="../img/whatsapp (1).png" alt="logowhatsapp" width="30px" height="30px"></a>
+          </div>
         </div>
-
-    </footer>
-
+        <div class="footer-col">
+          <h4>Contacto</h4>
+            <p class="parrafoFooter">Duarte Quiros 834 3 "A" - Córdoba Capital</p>
+            <p class="parrafoFooter">+549-3513254604</p>
+            <p class="parrafoFooter">contacto@molve.com.ar</p>
+          </ul>
+        </div>
+      </div>
+  </footer>
 
     <!-- SCRIPT -->
 
