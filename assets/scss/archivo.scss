@@ -51,9 +51,9 @@ $grosor-letra: bold;
   }
  }
 
+
 /*BLOQUE DOS*/
 /*Seccion dos de mi INDEX: ¿Quienes somos?*/
-
 .container {
   max-width: 1140px;
   margin: 0 auto; }
@@ -87,7 +87,6 @@ $grosor-letra: bold;
 /*BLOQUE TRES*/
 /*Seccion TRES de mi INDEX: Marcas que confian en nosotros*/
 /*Primer grid*/
-
 .marcas {
   margin: 30px 100px;
   padding: 10px;
@@ -116,7 +115,6 @@ $grosor-letra: bold;
 
 /*BLOQUE CUATRO*/
 /*HTML servicios: Nuestros Servicios*/
-
 .style {
   margin-top: 20px;
   padding: $tamaño-letra-parrafos/2;
@@ -144,7 +142,6 @@ $grosor-letra: bold;
     }
   }
  }
-
 
 .style__fondoLiquidos {
   margin: 0px;
@@ -209,6 +206,7 @@ $grosor-letra: bold;
   border: 2px solid black;
   border-radius: 10px;
 }
+
 
 
 /*INDEX*/
@@ -404,23 +402,10 @@ ul{
 .parrafoFooter {
   color: #bbbbbb;
 }
-@media (max-width:574px) {
-  .footer-col{
-    width: 100%;
-  }
-  
-}
 
-@media (max-width:767px) {
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-  }
-  
-}
 
 /*HTML Contacto*/
-/*Estilo Formulario*/
+/*Estilo Formulario
  .contacto {
   background-image: url(../../img/rutaa.jpg);
   background-attachment: fixed;
@@ -429,16 +414,7 @@ ul{
   padding: 2rem 0;
 }
 
-.presupuesto {
-  color: rgb(0, 0, 0);
-  font-weight: $grosor-letra;
-  font-size: $tamaño-letra-subtitulos;
-  font-family: $letra;
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 30px; 
 
-}
 
 .formularioDos {
   width: 450px;
@@ -453,6 +429,7 @@ ul{
   font-size:16px;
   
 }
+*/
 
 h3 {
   font-family: $letra;
@@ -461,7 +438,7 @@ h3 {
   text-align: center;
   margin-bottom: 20px;
 }
-
+/*
 input, textarea {
   outline: none;
   margin-bottom: 20px;
@@ -490,6 +467,142 @@ textarea {
   background: #7785ad;
 
 }
+*/
+
+/*Formulario Dos*/
+
+.presupuesto {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-size: $tamaño-letra-subtitulos;
+  font-family: $letra;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 1.5em; 
+  margin-top: 1em;
+
+}
+
+.hablanos {
+  background: white;
+  color: white;
+  line-height: 1.6;
+  font-family: $letra;
+  padding: 0 1.5em;
+  margin-bottom: 30px;
+}
+
+.container__hablanos {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+.hablanos__ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3em;
+  
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background: #222222;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+  display: block;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form .block {
+  grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid rgb(94, 141, 243);
+}
+
+.contact-form form button {
+  background: rgb(71, 145, 241);
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: rgb(71, 145, 241);
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: $color-titulos;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+  .hablanos {
+      padding: 0 4em;
+  }
+  .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+      padding: 2em; 
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+      text-align: left;
+  }
+}
+  .hablanos__contenedor {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+
+  margin-bottom: 20px;
+  }
 
 /*HTML Empresa*/
 
@@ -503,15 +616,35 @@ textarea {
   margin-top: ($tamaño-letra-parrafos*2)+10;
  }
 
-.iso {
-  margin-top: ($tamaño-letra-parrafos*2)+10;
+
+  .title{
+    text-align: center;
+    font-size: $tamaño-letra-subtitulos;
+    color: $color-titulos;
+    margin-top: 100px;
+    font-family: $letra;
+    padding: 10px;
+    font-weight: $grosor-letra;
+    margin-bottom: 30px;
+  }
+  
+
+  /*HTML FLOTA*/
+  .contenedorFlota {
+  margin: 20px;
+  }
+
+.padreFlota__descripcionCamiones {
+  color: $color-titulos;
+  font-weight: $grosor-letra;
+  font-size: $tamaño-letra-parrafos;
+  text-align: center;
+  font-style: normal;
+  margin-top: 18px;
  }
 
-.certificaciones {
-  margin: 40px 250px 80px 250px; }
 
-  
-/* MEDIA QUERIES */
+ /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .segundoTitulo {
     margin: 0%;
@@ -583,32 +716,6 @@ textarea {
       
     }
 
-  .title{
-    text-align: center;
-    font-size: $tamaño-letra-subtitulos;
-    color: $color-titulos;
-    margin-top: 100px;
-    font-family: $letra;
-    padding: 10px;
-    font-weight: $grosor-letra;
-    margin-bottom: 30px;
-  }
-  
-  /*HTML FLOTA*/
-
-  .contenedorFlota {
-  margin: 20px;
-  }
-
-.padreFlota__descripcionCamiones {
-  color: $color-titulos;
-  font-weight: $grosor-letra;
-  font-size: $tamaño-letra-parrafos;
-  text-align: center;
-  font-style: normal;
-  margin-top: 18px;
- }
-
 
 /* LARGE SIZE */
 @media(min-width: 700px) {
@@ -634,4 +741,19 @@ textarea {
   .sectionPrincipal__segundoTitulo{
      margin-left: -6.5rem;
   }
+
+  }
+  @media (max-width:574px) {
+    .footer-col{
+      width: 100%;
+    }
+    
+  }
+  
+  @media (max-width:767px) {
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+    }
+    
   }
