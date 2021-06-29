@@ -77,19 +77,21 @@
 }
 
 .marcas__formatoImagenes {
-  max-width: 30%;
-  height: auto; }
+    margin: 1rem auto;
+    max-width: 30%;
+    height: auto;
+}
 
 .marcas__ypf {
   grid-area: ypf;
-  margin-left: 250px; }
+ }
 
 .marcas__vitol {
   grid-area: vitol; }
 
 .marcas__cammesa {
   grid-area: cammesa;
-  margin-left: o auto; }
+ }
 
 .marcas__holcim {
   grid-area: holcim; }
@@ -497,7 +499,6 @@ h3 {
     display: flex;
     flex-direction: column; }
   .titulos {
-    font-size: 18px;
     margin: 15px, 0px; }
   .tituloLiquidos {
     font-size: 15px;
