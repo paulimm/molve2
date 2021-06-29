@@ -64,33 +64,6 @@
   margin-bottom: 30px;
   margin-top: 30px; }
 
-/*BLOQUE TRES*/
-/*Seccion TRES de mi INDEX: Marcas que confian en nosotros*/
-/*Primer grid*/
-.marcas {
-  margin: 30px 100px;
-  padding: 10px;
-  display: grid;
-  grid-template-areas: "ypf vitol"
- "cammesa holcim"; }
-
-.marcas__formatoImagenes {
-  max-width: 30%;
-  height: auto; }
-
-.marcas__ypf {
-  grid-area: ypf;
-  margin-left: 250px; }
-
-.marcas__vitol {
-  grid-area: vitol; }
-
-.marcas__cammesa {
-  grid-area: cammesa;
-  margin-left: 250px; }
-
-.marcas__holcim {
-  grid-area: holcim; }
 
 /*BLOQUE CUATRO*/
 /*HTML servicios: Nuestros Servicios*/
@@ -475,16 +448,12 @@ h3 {
   font-style: normal;
   margin-top: 18px; }
 
+  
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .segundoTitulo {
     margin: 0%;
     padding: 1.5%; }
-  .marcas {
-    display: grid;
-    grid-template-areas: "ypf vitol"
- "cammesa holcim";
-    grid-template-columns: 2fr 1fr; }
   footer {
     flex-direction: column; }
   .marcas {
@@ -540,3 +509,4 @@ h3 {
     margin-left: -6rem; }
   .sectionPrincipal__segundoTitulo {
     margin-left: -6.5rem; } }
+
